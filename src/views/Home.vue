@@ -2,9 +2,7 @@
   <div>
     <px-assets-table :assets="assets" v-if="!isLoading" />
     <div class="text-center" v-else>
-      <h1 class="text-gray-700 text-6xl">
-        Loading assets
-      </h1>
+      <bounce-loader :loading="isLoading" :color="'#68d391'" :size="100" />
     </div>
   </div>
 </template>
