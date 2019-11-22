@@ -30,7 +30,7 @@ export default {
       this.assets = await api.getAssets()
       this.isLoading = false
     } catch (error) {
-      console.log(error)
+      return null
     }
   }
 }
